@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Parallax Effect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <div class="container" id="girl">
+        <img src="girl3.jpg" alt="unplash.com image" width="600">
+        <div class="degradado" id="mask"></div>
+    </div>
+    <script>
+        const $girl = document.getElementById('girl');
+        const $mask = document.getElementById('mask');
+        window.addEventListener('scroll', function(e){
+        console.log(window.scrollY);
+        var position =window.scrollY;
+        $mask.style.backgroundPosition ='center '+ position*0.3 + 'px';
+        });
+    </script>
+</body>
+</html>

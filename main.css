@@ -1,0 +1,23 @@
+body{
+    background-color: #100F0D;
+    margin: 0;
+    height: 200vh;
+}
+.container{
+    position: relative;
+    width: 600px;
+    height: 900px;
+    margin: 180px auto;
+}
+.degradado{
+    background-image: url(degradado.png);
+    width: 300px;
+    height: 62px;
+    position: absolute;
+    top: 349px;
+    left: 145px;
+    opacity: 0.6;
+    -webkit-mask-image: url(glasses.png);
+    mask-image: url(glasses.png);
+    mask-repeat: no-repeat;
+}
